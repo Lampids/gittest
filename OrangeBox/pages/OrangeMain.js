@@ -24,6 +24,8 @@ import scheduledImg1 from "../img/scheduled_img1.jpg";
 import scheduledImg2 from "../img/scheduled_img2.jpg";
 import scheduledImg3 from "../img/scheduled_img3.jpg";
 import scheduledImg4 from "../img/scheduled_img4.jpg";
+import scheduledImg5 from "../img/scheduled_img5.jpg";
+import scheduledImg6 from "../img/scheduled_img6.jpg";
 class OrangeMain extends React.Component {
 
   componentDidMount() {
@@ -476,6 +478,84 @@ class OrangeMain extends React.Component {
                     </li>
                     <li>
                       출연 : 리암 니슨,제이콥 페레즈,캐서린 원닉
+                    </li>
+                    <li>
+                      개봉일 : 미정
+                    </li>
+                  </ul>
+                  <ul className={OrangeMainSt.preview_menu}>
+                    <li>
+                      예매하기
+                    </li>
+                    <li>
+                      예고편
+                    </li>
+                    <li>
+                      포토보기
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img src={scheduledImg5} alt="예정작 이미지"></img>
+                <div className={OrangeMainSt.scheduled_info_box}>
+                  <span className={OrangeMainSt.scheduled_movie_title}>
+                    <p>어나더 라운드</p>
+                    <p>Another Round</p>
+                  </span>
+                  <ul className={OrangeMainSt.scheduled_info_list}>
+                    <li>
+                      <p>기대평점 : </p>
+                      <img src={small_star} alt="평점별"></img>
+                      <p>4.5</p>
+                    </li>
+                    <li>
+                      개요 : 코미디,드라마
+                    </li>
+                    <li>
+                      감독 : 토마스 빈터베르
+                    </li>
+                    <li>
+                      출연 : 매즈 미켈슨,토마스 보 라센,마그누스 밀링
+                    </li>
+                    <li>
+                      개봉일 : 미정
+                    </li>
+                  </ul>
+                  <ul className={OrangeMainSt.preview_menu}>
+                    <li>
+                      예매하기
+                    </li>
+                    <li>
+                      예고편
+                    </li>
+                    <li>
+                      포토보기
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <img src={scheduledImg6} alt="예정작 이미지"></img>
+                <div className={OrangeMainSt.scheduled_info_box}>
+                  <span className={OrangeMainSt.scheduled_movie_title}>
+                    <p>백악관 최후의 날</p>
+                    <p>Olympus has Fallen</p>
+                  </span>
+                  <ul className={OrangeMainSt.scheduled_info_list}>
+                    <li>
+                      <p>기대평점 : </p>
+                      <img src={small_star} alt="평점별"></img>
+                      <p>4.3</p>
+                    </li>
+                    <li>
+                      개요 : 액션,스릴러
+                    </li>
+                    <li>
+                      감독 : 앤드완 퓨콰
+                    </li>
+                    <li>
+                      출연 : 제라드 버틀러,아론 에크하트,모건 프리먼
                     </li>
                     <li>
                       개봉일 : 미정
