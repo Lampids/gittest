@@ -145,7 +145,7 @@ class Photoarea extends React.Component{
             <img src={photoimg12} alt="이미지"></img>
           </li>
           <li>
-            <img src={photoimg13} alt="이미지"></img>
+            <img src={photoimg13} alt="이미지 이미지일까?"></img>
           </li>
           <li>
             <img src={photoimg14} alt="이미지"></img>
