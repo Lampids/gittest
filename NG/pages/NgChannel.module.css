@@ -1,0 +1,628 @@
+@charset "utf-8";
+
+.channel_section
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(241, 249, 255);
+}
+
+.channel_section > .channel_main
+{
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    max-height: 920px;
+    background-color: #000000;
+}
+
+.channel_main::after
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    content: '';
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 40%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 40%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.channel_main > .channel_bg
+{
+    position: relative;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+}
+
+.channel_bg > li
+{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    overflow: hidden;
+}
+
+.channel_bg > li > img
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    filter: blur(2px);
+}
+
+
+
+.channel_main > .channel_title_box
+{
+    position: absolute;
+    top:45%;
+    left:50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 11;
+    transform: translate(-50%,-50%);
+    width: 81%;
+    height: auto;
+}
+
+.channel_title_box > .title_img
+{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 75px;
+    min-height: 75px;
+    text-align: center;
+    background-image: url(../img/Cheannl_logo_w.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.channel_title_box > .title_text
+{
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.channel_title_box > .channel_subscribe
+{
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 300px;
+    height: 55px;
+    border-radius: 200px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffd800;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.channel_subscribe:hover
+{
+    background-color: #fff
+}
+
+.channel_section > .section1
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section1 > .section1_title
+{
+    margin: 0 auto;
+    display: block;
+    width: 81%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.section1_title > span
+{
+    width: auto;
+    height: auto;
+    border-left: 3px solid #ffd800;
+    padding-left: 10px;
+    font-size: 1.7em;
+    color: #fff;
+}
+
+
+.section1 > .main_channel
+{
+    margin: 0 auto;
+    display: flex;
+    width: 81%;
+    height: 750px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #141414;
+}
+
+.main_channel > .large_thumbnail
+{
+    position: relative;
+    margin-right: 10px;
+    width: 30%;
+    height: 100%;
+    background-color: goldenrod;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.large_thumbnail > img
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition-duration: 0.3s;
+    width: auto;
+    height: 100%;
+}
+
+.large_thumbnail:hover > img
+{
+    height: 105%;
+}
+
+.large_thumbnail > .large_thumbnail_title
+{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0,0.7);
+    box-sizing: border-box;
+    padding: 5px;
+    color: #fff;
+}
+
+.large_thumbnail_title > h3
+{
+    border-left: 3px solid #ffd800;
+    height: auto;
+    padding-left: 5px;
+}
+
+
+.large_thumbnail_title > h2
+{
+    border-left: 3px solid #ffd800;
+    height: auto;
+    padding-left: 5px;
+}
+
+.large_thumbnail_title > p
+{
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+
+.main_channel > .small_thumbnail_list
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.small_thumbnail_list > li
+{
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 33%;
+    overflow: hidden;
+}
+
+.small_thumbnail_list > li > .small_thumbnail_title
+{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: rgb(0, 0, 0,0.7);
+    color:#fff;
+}
+
+.small_thumbnail_title > h3
+{
+    border-left: 3px solid #ffd800;
+    height: auto;
+    padding-left: 5px;
+}
+
+
+.small_thumbnail_title > h2
+{
+    border-left: 3px solid #ffd800;
+    height: auto;
+    padding-left: 5px;
+}
+
+.small_thumbnail_title > p
+{
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.small_thumbnail_list > li > img
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: auto;
+    transition-duration: 0.3s;
+}
+
+.small_thumbnail_list >li:hover > img
+{
+    width: 105%;
+}
+
+.small_thumbnail_list > li:last-child
+{
+    margin:0px;
+}
+
+.channel_section > .section2
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 35%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.section2 > .channel_search_box
+{
+    margin: 0 auto;
+    width: 50%;
+    height: 125px;
+}
+
+.channel_search_box > .channel_title
+{
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    font-size: 1.7em;
+    border-left: 3px solid #ffd800;
+    border-right: 3px solid #ffd800;
+}
+
+.channel_search_box > .channel_search
+{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    width: 65%;
+    height: 55px;
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    padding-left: 15px;
+    border: 3px solid #ffd800;
+}
+
+.channel_search > .channel_search_input
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 75%;
+    height: 100%;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding-left: 25px;
+    border: none;
+}
+
+.channel_search_input:focus
+{
+    outline: none;
+}
+
+.channel_search > .channel_search_button
+{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width: 10%;
+    border: none;
+    background-color: #353535;
+    background-image: url(../img/search.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.section2 > .channel_list_area
+{
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 81%;
+    height: auto;
+}
+
+.channel_list_area > li
+{
+    position: relative;
+    margin-bottom: 55px;
+    aspect-ratio: 1 / 0.8;
+    width: 46%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.channel_list_area > li > img
+{
+    margin: 0 auto;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    height: 100%;
+}
+
+.channel_list_area > li > img:hover
+{
+    opacity: 1;
+    transform: scale(1.03);
+}
+.channel_list_area > li > .channel_list_title
+{
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 115px;
+    box-sizing: border-box;
+    padding:10px;
+    background-color: rgba(25, 25, 25,0.5);
+}
+.channel_list_title > span
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+.channel_list_title > span:nth-child(1)
+{
+    font-size: 1.1em;
+    border-left: 3px solid #ffd800;
+}
+
+.channel_list_title > span:nth-child(2)
+{
+    font-size: 1.6em;
+}
+.channel_list_title > span:nth-child(3)
+{
+    font-size: 1.1em;
+}
+
+@media (min-width: 1920px)
+{
+    .channel_section
+    {
+        margin: 0 auto;
+        width: 1920px;
+    }
+}
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+    .channel_title_box > .title_img
+    {
+        width: 250px;
+        height: 50px;
+    }
+    .channel_main > .channel_title_box
+    {
+        width: 80%;
+    }
+    .channel_title_box > .channel_subscribe
+    {
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    .channel_title_box > .title_text
+    {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+    .channel_search_box > .channel_title
+    {
+        width: 35%;
+    }
+    .magazine_area > li
+    {
+        min-width: 15%;
+        background-color: red;
+    }
+    .section1 > .main_channel
+    {
+        width: 90%;
+    }
+    .channel_search_box > .channel_search
+    {
+        width: 100%;
+    }
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .channel_section > .channel_main
+    {
+        height: 70vw;
+    }
+    .channel_bg > li > img
+    {
+        width: auto;
+        height: 100%;
+    }
+    .channel_title_box > .title_img
+    {
+        width: 30vw;
+        height: 50px;
+    }
+    .channel_main > .channel_title_box
+    {
+        width: 80%;
+    }
+    .channel_title_box > .channel_subscribe
+    {
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 3vw;
+        padding: 3%;
+    }
+    .channel_title_box > .title_text
+    {
+        margin-top: 1%;
+        font-size: 1.2em;
+    }
+    .channel_title_box > .title_text
+    {
+        font-size: 16px;
+    }
+    .channel_main > .channel_title_box
+    {
+        top:55%;
+    }
+    .section1 > .main_channel
+    {
+        flex-direction: column;
+    }
+    .main_channel > .large_thumbnail
+    {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 25px;
+    }
+    .large_thumbnail_title > h3
+    {
+        display: none;
+    }
+    .large_thumbnail > img
+    {
+        width: auto;
+        height: 100%;
+    }
+    .large_thumbnail > .large_thumbnail_title
+    {
+        height: auto;
+    }
+    .main_channel > .small_thumbnail_list
+    {
+        width: 100%;
+        height: auto;
+    }
+    .small_thumbnail_list > li > .small_thumbnail_title
+    {
+        height: auto;
+    }
+    .small_thumbnail_list > li
+    {
+        height: 150px;
+    }
+    .small_thumbnail_title > h3
+    {
+        display: none;
+    }
+    .section2 > .channel_search_box
+    {
+        width: 81%;
+    }
+    .channel_search_box > .channel_title
+    {
+        width: 100%;
+    }
+    .channel_search_box > .channel_search
+    {
+        width: 100%;
+    }
+    .section2 > .channel_list_area
+    {
+        flex-direction: column;
+    }
+    .channel_list_area > li
+    {
+        width: 100%;
+    }
+}
+
+/*최소*/
+@media (max-width: 385px) 
+{
+
+}

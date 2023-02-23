@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.login_section
+{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    background-color: #191919;
+}
+
+.login_section > .login_area
+{
+    margin: 0 auto;
+    width: 650px;
+    height: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
+}
+
+.login_area > .account_select
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #191919;
+}
+
+.account_select > span
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+.account_select > span:hover
+{
+    text-decoration: underline;
+}
+
+.login_area > .account_input
+{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.account_input > input
+{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 0 0 2px #191919 inset;
+    padding-left: 25px;
+}
+
+.login_area > .account_help
+{
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.account_help > span
+{
+    color: rgb(32, 32, 138);
+    cursor: pointer;
+}
+
+.login_area > .login_logo
+{
+    margin-top: 15px;
+    width: 100%;
+    height: 65px;
+}
+.login_logo > a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/NGlogo_b.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+@media (min-width: 1920px)
+{
+
+}
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .login_section
+    {
+        padding-top: 150px;
+    }
+    .login_section > .login_area
+    {
+        width: 85%;
+    }
+
+}
+
+/*최소*/
+@media (max-width: 385px) 
+{
+
+}

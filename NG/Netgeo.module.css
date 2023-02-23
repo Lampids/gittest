@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ng_wrap
+{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 15);
+    font-family: 'SUIT-Medium';
+    overflow: hidden;
+}
+
+/*축소*/
+@media (min-width: 1920px)
+{
+
+}
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+
+}
+
+/*최소*/
+@media (max-width: 320px) 
+{
+
+}
+

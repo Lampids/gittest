@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+.brand_section
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(103, 177, 109);
+}
+
+.brand_section > .section1
+{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.section1::after
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgb(0, 0, 0,0.7);
+
+}
+
+.section1 > .section_video
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 1080px;
+}
+
+.section1 > .section1_inner
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: auto;
+}
+
+.section1_inner > span
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+.section1_inner > .section1_img
+{
+    margin-bottom: 50px;
+    height: 100px;
+}
+
+.section1_img > img
+{
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+}
+
+.section1_inner > span:nth-child(2)
+{
+    margin-bottom: 30px;
+    border-left : 3px solid #ffd800;
+    border-right: 3px solid #ffd800;
+}
+
+.section1_inner > span > p
+{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 21px;
+}
+
+.section1_inner >.sub_phrase > p
+{
+    font-size: 17px;
+}
+
+.brand_section > .section2
+{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.section2 > .section2_inner
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 81%;
+    height: 700px;
+}
+
+.section2_inner > .section2_main_topic
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.section2_main_topic > .channel_logo
+{
+    width: 100%;
+    min-height: 75px;
+    background-image: url(../img/Cheannl_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section2_main_topic > .channel_phrase
+{
+    width: 50%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+.section2_inner > .channel_area
+{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    box-shadow:  0 0 0 3px #ffd800;
+    box-sizing: border-box;
+    padding: 10px;
+    background-image: url(../img/channel.jpg);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
+}
+
+.brand_section > .section3
+{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background-color: rgb(35, 51, 40);
+    box-sizing: border-box;
+}
+
+.section3 > .section3_inner
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 81%;
+    height: 700px;
+}
+
+.section3_inner > .section3_main_topic
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.section3_main_topic > .magazine_logo
+{
+    width: 100%;
+    min-height: 75px;
+    background-image: url(../img/Magazine_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section3_main_topic > .magazine_phrase
+{
+    width: 50%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: #fff;
+}
+.section3_inner > .magazine_area
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70%;
+    box-shadow:  0 0 0 3px #ffd800;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.magazine_area > li
+{
+    margin: 0 10px 0 10px;
+    width: 315px;
+    min-width: 315px;
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+
+.magazine_area > li > img
+{
+    height: 100%;
+}
+
+.brand_section > .section4
+{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.section4 > .section4_inner
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 81%;
+    height: 700px;
+}
+
+.section4_inner > .section4_main_topic
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.section4_main_topic > .apparel_logo
+{
+    width: 100%;
+    min-height: 75px;
+    background-image: url(../img/Apparel_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section4_main_topic > .apparel_phrase
+{
+    width: 50%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+.section4_inner > .apparel_area
+{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    box-shadow:  0 0 0 3px #ffd800;
+    box-sizing: border-box;
+    padding: 10px;
+    background-image: url(../img/Storeimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1920px)
+{
+    .brand_section
+    {
+        margin: 0 auto;
+        width: 1920px;
+    }
+}
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+    .magazine_area > li
+    {
+        min-width: 15%;
+        background-color: red;
+    }
+    
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .brand_section > .section1
+    {
+        height: 850px;
+    }
+    .section1_img > img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .section1 > .section1_inner
+    {
+        width: 80%;
+    }
+    .section2_main_topic > .channel_phrase
+    {
+        width: 100%;
+    }
+    .section3_main_topic > .magazine_phrase
+    {
+        width: 100%;
+    }
+    .section4_main_topic > .apparel_phrase
+    {
+        width: 100%;
+    }
+
+}
+
+/*최소*/
+@media (max-width: 385px) 
+{
+
+}

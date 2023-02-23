@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.square_wrap
+{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    overflow: hidden;
+    font-family: 'Pretendard-Regular';
+}
+
+/*축소*/
+@media (min-width: 1920px)
+{
+
+}
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+
+}
+
+/*최소*/
+@media (max-width: 320px) 
+{
+
+}
+

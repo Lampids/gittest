@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+.siteinfo_section
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.siteinfo_section > .section_title
+{
+    position: absolute;
+    top:-10%;
+    left:0px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b5e9e8;
+}
+
+.section_title > img
+{
+    display: block;
+    margin-right: 25px;
+    width: auto;
+    height: 100%;
+}
+
+.siteinfo_section > .siteinfo_area
+{
+    width: 100%;
+    height: 95%;
+    border-left: 1px solid #b5e9e8;
+    background-image: url(../imgs//bg_patton.png);
+    background-size: 2.5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.siteinfo_area > span
+{
+    display: block;
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 21px;
+}
+
+.siteinfo_area > .site_path
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.site_path > li
+{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color:  #fff;
+}
+
+.site_path > li > .site_link
+{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 35px;
+}
+
+.site_link > li
+{
+    margin-right: 10px;
+    width: 125px;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 0px 10px 0px 10px;
+    background-color: #b5e9e8;
+}
+
+.site_link > li > a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.site_link > li:hover
+{
+    background-color: skyblue;
+}
+
+.siteinfo_area > .contact_list
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.contact_list > li
+{
+    margin-top: 10px;
+    color:  #fff;
+}
+
+
+.siteinfo_area > .site_logo_box
+{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.site_logo_box > img
+{
+    width: auto;
+    height: 100%;
+}
+
+.siteinfo_area > .another_design
+{
+    margin: 20px 0px 20px 0px;
+    display: block;
+    width: 325px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 0px 15px 0px;
+    background-color: rgba(72,198,225,0.5);
+}
+
+.another_design > a
+{
+    display: block;
+    width: auto;
+    height: auto;
+    color:  #fff;
+    text-align: center;
+}
+
+.another_design:hover
+{
+    background-color: skyblue;
+}
+
+/*축소*/
+@media (min-width: 1950px)
+{
+    .main_section
+    {
+        margin: 0 auto;
+    }
+    .intro_box > span > p
+    {
+        font-size: 30px;
+    }
+    .logo_box > img
+    {
+        width: 800px;
+    }
+}
+
+/*세로가 작을떄*/
+@media (min-height: 900px)
+{
+
+
+}
+
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .siteinfo_section > .section_title
+    {
+        height: 35px;
+        padding: 0px;
+        justify-content: center;
+    }
+    .section_title > img
+    {
+        margin: 0 auto;
+        height: 50%;
+    }
+    .section_title > img:nth-child(1)
+    {
+        display: none;
+    }
+    .siteinfo_section > .siteinfo_area
+    {
+        border: none;
+    }
+    .siteinfo_area > span
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .site_path > li > span
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .site_path > li > .site_link
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+    .site_link > li
+    {
+        margin: 5px;
+    }
+    .contact_list > li
+    {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .siteinfo_area > .site_logo_box
+    {
+        position: relative;
+    }
+    .site_logo_box > img
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 75%;
+        height: auto;
+    }
+    .siteinfo_area > .another_design
+    {
+        width: 100%;
+    }
+    .another_design > a
+    {
+        width: 100%;
+    }
+
+}
+
+/*최소*/
+@media (max-width: 320px) 
+{
+
+}

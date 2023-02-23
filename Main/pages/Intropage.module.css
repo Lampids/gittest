@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+.intro_section
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.intro_section > .section_title
+{
+    position: absolute;
+    top:-10%;
+    left:0px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b5e9e8;
+}
+
+.section_title > img
+{
+    display: block;
+    margin-right: 25px;
+    width: auto;
+    height: 100%;
+}
+
+.intro_section > .intro_area
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 95%;
+    border-left: 1px solid #b5e9e8;
+    background-image: url(../imgs//bg_patton.png);
+    background-size: 2.5px;
+    transition-duration: 0.2s;
+}
+
+.intro_area > .my_info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.my_info > .my_img_box
+{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.my_img_box > img
+{
+    position: absolute;
+    top:50%;
+    left:50px;
+    transform: translate(0%,-50%);
+    z-index: 10;
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.my_img_box > .my_info_animate
+{
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48c6e1+0,000000+100&1+0,0+100 */
+    background: -moz-linear-gradient(left,  rgba(72,198,225,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.my_img_box > .my_img
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.my_img > img
+{
+    margin-right: 10px;
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.my_img > span
+{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+}
+
+.my_img > span > p
+{
+    color:  #fff;
+    font-size: 20px;
+    height: auto;
+    padding: 5px 0px 5px 0px;
+}
+
+.my_info > .exper_box
+{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48c6e1+0,000000+100&1+0,0+100 */
+    background: -moz-linear-gradient(left,  rgba(72,198,225,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.exper_box > span
+{
+    font-size: 20px;
+    color : #fff;
+    height: auto;
+    border-bottom: 1px solid #b5e9e8;
+}
+
+.exper_box > .exper_list
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.exper_list > li
+{
+    display: flex;
+    width: 100%;
+    height: 35px;
+}
+
+.exper_list > li > p
+{
+    color: #fff;
+    margin-right: 10px;
+    width: auto;
+}
+
+
+.intro_area > .ability_list_box
+{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.ability_list_box > span
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: right;
+    color:  #fff;
+}
+
+.ability_list_box > .ability_list
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.ability_list > li
+{
+    display: flex;
+    flex-direction:row-reverse;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.ability_list > li > .ability_img
+{
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    width: 125px;
+    height: 100%;
+}
+
+.ability_img > img
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 100%;
+}
+
+.ability_list > li > .ability_info
+{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.ability_info > span
+{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ability_info > .ability_bar
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 15px;
+    border-radius: 100px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 0 1px white inset;
+}
+
+.ability_bar > p
+{
+    position: absolute;
+    right:0px;
+    top:0px;
+    font-size: 10px;
+    width: 100px;
+    height: 100%;
+    color:  rgb(0, 0, 0);
+    background-color: #b5e9e8;
+}
+
+.ability_bar > div
+{
+    position: absolute;
+    right:-100%;
+    top:0px;
+    font-size: 10px;
+    width: 200%;
+    height: 100%;
+    color:  rgb(0, 0, 0);
+    border-radius: 100px;
+    background-color: #b5e9e8;
+}
+
+
+.ability_bar > .html_bar
+{
+    width: 80%;
+}
+
+.ability_bar > .css_bar
+{
+    width: 80%;
+}
+
+.ability_bar > .jq_bar
+{
+    width: 70%;
+}
+
+.ability_bar > .ph_bar
+{
+    width: 65%;
+}
+
+.ability_bar > .react_bar
+{
+    width: 50%;
+}
+
+.ability_bar > .java_bar
+{
+    width: 55%;
+}
+
+
+/*축소*/
+@media (min-width: 1950px)
+{
+    .main_section
+    {
+        margin: 0 auto;
+    }
+    .intro_box > span > p
+    {
+        font-size: 30px;
+    }
+    .logo_box > img
+    {
+        width: 800px;
+    }
+}
+
+/*세로가 작을떄*/
+@media (min-height: 900px)
+{
+
+
+}
+
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+    .my_info > .my_img_box
+    {
+        height: 385px;
+    }
+    .my_img
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .my_img > img
+    {
+        width: 125px;
+        height: auto;
+    }
+    .exper_box
+    {
+        height: auto;
+    }
+    
+    .exper_box > .exper_list
+    {
+        padding: 0px 0px 10px 0px;
+        height: auto;
+    }
+    .exper_list > li
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .intro_section > .section_title
+    {
+        height: 35px;
+        padding: 0px;
+        justify-content: center;
+    }
+    .section_title > img
+    {
+        margin: 0 auto;
+        height: 50%;
+    }
+    .section_title > img:nth-child(1)
+    {
+        display: none;
+    }
+    .intro_section > .intro_area
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+        border: none;
+    }
+    .intro_area > .my_info
+    {
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .my_info > .my_img_box
+    {
+        height: auto;
+    }
+    .my_img_box > .my_info_animate
+    {
+        display: none;
+    }
+    .my_img_box > .my_img
+    {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .my_img > img
+    {
+        margin: 0 auto;
+        width: auto;
+        height: 200px;
+    }
+    .my_img > span
+    {
+        height: auto;
+    }
+    .my_img > span > p
+    {
+        text-align: center;
+    }
+
+    .my_info > .exper_box
+    {
+        height: auto;
+    }
+    .exper_list > li
+    {
+        flex-wrap: wrap;
+        height: auto;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+    .exper_list > li > p
+    {
+        height: auto;
+    }
+    .intro_area > .ability_list_box
+    {
+        width: 100%;
+    }
+}
+
+/*최소*/
+@media (max-width: 320px) 
+{
+    .ability_list_box > span
+    {
+        text-align: center;
+    }
+    .ability_list > li
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .ability_list > li > .ability_img
+    {
+        width: auto;
+        height: 125px;
+    }
+    .ability_list > li > .ability_info
+    {
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+

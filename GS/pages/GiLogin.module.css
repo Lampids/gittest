@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.login_section
+{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230);
+}
+
+.login_section::after
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Login_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    filter:blur(3px);
+}
+
+.login_section > .login_inner
+{
+    position: absolute;
+    top:0px;
+    left:50%;
+    z-index: 1;
+    transform: translate(-50%,-0%);
+    box-sizing: border-box;
+    padding-top: 8%;
+    width: 700px;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.login_inner > .login_box
+{
+    width: 100%;
+    height: 670px;
+    box-sizing: border-box;
+    padding: 3%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.login_box > .login_title
+{
+    position: relative;
+    width: 100%;
+    height: 125px;
+    box-sizing: border-box;
+}
+
+.login_title > img
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 55%;
+}
+
+.login_box > .login_path
+{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.login_path > button
+{
+    border: none;
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Happiness-Sans-Title';
+    cursor: pointer;
+    background-color: #383b40;
+}
+
+.login_path > button:hover
+{
+    color: #000;
+    background-color: rgba(165, 165, 165, 0.5);
+}
+
+.login_path > button .btn_active
+{
+    background-color: blue;
+}
+
+.login_box > .account_input
+{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.account_input > input
+{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px #cacaca inset;
+}
+
+.login_box > .account_help
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.account_help > li
+{
+    width: auto;
+    height: 100%;
+    font-size: 1.3em;
+    color: #d8b654;
+}
+
+.login_box > .login_button
+{
+    width: 100%;
+    height: 81px;
+    background-color: #383b40;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d8b654;
+    cursor: pointer;
+}
+/* .login_path > .hoyoverse_login
+{
+    background-color: #7bb1ff;
+}
+
+.login_path > .genshin_login
+{
+    background-color: rgb(104, 116, 228);
+} */

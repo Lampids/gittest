@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+
+.footer
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(15, 15, 15);
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left : 9.5%;
+    padding-right: 9.5%;
+}
+
+
+.footer > .summary_box
+{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 250px;
+}
+
+.summary_box > .summary_navi
+{
+    border-right: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    min-width: 270px;
+    height: 100%;
+}
+
+.summary_navi > .summary_list
+{
+    margin-left: 20px;
+    width: auto;
+    color: #fff;
+}
+
+.summary_list > h3
+{
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.summary_list > li 
+{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.summary_list > li > a
+{
+    color: #fff;
+}
+
+.summary_list > li > a:hover
+{
+    text-decoration: underline;
+}
+.summary_box > .site_info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+    height: 100%;
+}
+
+.site_info > .subscribe
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.subscribe > .subscribe_button
+{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffd800;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.subscribe_button:hover
+{
+    background-color: #fff;
+}
+
+.site_info > .site_info_list
+{
+    width: 100%;
+    height: auto;
+}
+
+.site_info_list > li
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+.site_info_list > li > p
+{
+    margin-left: 10px;
+    display: block;
+    width: auto;
+    color: #fff;
+}
+
+.footer > .footer_bottom
+{
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background-image: url(../img/NGlogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .footer > .summary_box
+    {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 0px;
+    }
+    .summary_box > .summary_navi
+    {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        border: none;
+    }
+    .summary_navi > .summary_list
+    {
+        margin-left: 0px;
+    }
+    .summary_box > .site_info
+    {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .subscribe > .subscribe_button
+    {
+        margin: 0 auto;
+    }
+    .site_info_list > li
+    {
+        text-align: center;
+        justify-content:center;
+    }
+    .site_info_list > li > p
+    {
+        text-align: center;
+    }
+    .footer > .footer_bottom
+    {
+        background-position: center;
+    }
+}

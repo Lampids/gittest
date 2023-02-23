@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+.main_section
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.main_section > .section_title
+{
+    position: absolute;
+    top:-10%;
+    left:0px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b5e9e8;
+}
+
+.section_title > img
+{
+    display: block;
+    margin-right: 25px;
+    width: auto;
+    height: 100%;
+}
+
+.main_section > .main_intro_area
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 95%;
+    border-left: 1px solid #b5e9e8;
+    background-image: url(../imgs//bg_patton.png);
+    background-size: 2.5px;
+}
+
+.main_intro_area > .intro_box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.intro_box > span
+{
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.intro_box > span > p
+{
+    position: absolute;
+    left:-100%;
+    top:0px;
+    color:  #fff;
+    box-sizing: border-box;
+    padding: 5px 20px 5px 20px;
+    font-size: 31px;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48c6e1+0,000000+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(72,198,225,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+
+.intro_box > .logo_box
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.logo_box > span
+{
+    position: absolute;
+    top:0px;
+    left:-100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48c6e1+0,000000+100&1+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(72,198,225,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    
+}
+
+.logo_box > img
+{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: auto;
+}
+.main_intro_area > .thumbnail_imgs
+{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    border-top: 1px solid #b5e9e8;
+}
+
+.thumbnail_imgs > .thumbnail_list
+{
+    position: absolute;
+    right:0px;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 0px;
+}
+
+.thumbnail_list > li
+{
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 160px;
+    opacity: 0;
+}
+
+.thumbnail_list > li > img
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: auto;
+}
+
+
+/*축소*/
+@media (min-width: 1950px)
+{
+    .main_section
+    {
+        margin: 0 auto;
+    }
+    .intro_box > span > p
+    {
+        font-size: 30px;
+    }
+    .logo_box > img
+    {
+        width: 800px;
+    }
+}
+
+/*세로가 작을떄*/
+@media (min-height: 900px)
+{
+
+
+}
+
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+    .intro_box > span > p
+    {
+        font-size: 2.5vw;
+    }
+    .intro_box > .logo_box
+    {
+        height: 15vw;
+    }
+    .thumbnail_imgs > .thumbnail_list
+    {
+        width: 300px;
+    }
+    .thumbnail_list > li > img
+    {
+        width: 35vh;
+        height: auto;
+    }
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .main_section
+    {
+        height: auto;
+        padding-top: 0px;
+        justify-content: flex-start;
+    }
+    .main_section > .section_title
+    {
+        height: 35px;
+        padding: 0px;
+        justify-content: center;
+    }
+    .section_title > img
+    {
+        margin: 0 auto;
+        height: 50%;
+    }
+    .section_title > img:nth-child(1)
+    {
+        display: none;
+    }
+    .main_section > .main_intro_area
+    {
+        flex-direction: column;
+        height: auto;
+        border: none;
+    }
+    .main_intro_area > .intro_box
+    {
+        width: 100%;
+        height: auto;
+    }
+    .intro_box > span
+    {
+        height: 50px;
+    }
+    .intro_box > span > p
+    {
+        display: block;
+        font-size: 5vw;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: none;
+    }
+    .intro_box > .logo_box
+    {
+        height: 150px;
+    }
+    .logo_box > img
+    {
+        width: 50%;
+        height: auto;
+    }
+    .main_intro_area > .thumbnail_imgs
+    {
+        width: 100%;
+        height: 1000px;
+    }
+    .thumbnail_imgs > .thumbnail_list
+    {
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    .thumbnail_list > li
+    {
+        margin: 0 auto;
+        width: 100%;
+        height: 250px;
+    }
+
+}
+
+/*최소*/
+@media (max-width: 320px) 
+{
+
+}
+

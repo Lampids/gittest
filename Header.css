@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+.header
+{
+    position: fixed;
+    z-index: 900;
+    right:15px;
+    top:15px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(220, 228, 255,0.5);
+    transition-duration: 0.3s;
+    font-family: 'GmarketSansMedium';
+}
+.header > .navi_button
+{
+    float: right;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(220, 228, 255);
+    background-image: url(./imgs/navi.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+/*
+background-color: rgb(255, 174, 120);
+*/
+.navi_button:hover
+{
+    background-color: rgb(255, 204, 169);
+}
+
+.header > .navi
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 300px;
+    height: 100%;
+}
+
+.navi > li
+{
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 10px;
+}
+
+.navi > li > a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+}
+
+.navi > li:hover
+{
+    background-color: rgb(255, 174, 120);
+}
+
+@media (max-width: 766px)
+{
+    .header
+    {
+        width: 100% !important;
+        right:0px;
+    }
+    .header > .navi_button
+    {
+        display: none;
+    }
+    .header > .navi
+    {
+        width: 100%;
+    }
+
+}
+
+
+/* .header > .navi
+{
+    display: flex;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+.navi > li
+{
+    margin-left: 1%;
+    width: auto;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 5px;
+    color: #fff;
+    transition-duration: 0.1s;
+}
+
+.navi > li:hover
+{
+    background-color: rgb(255, 174, 120);
+}
+
+.navi > li > a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+} */

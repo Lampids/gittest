@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+.portfolio_section
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.portfolio_section > .section_title
+{
+    position: absolute;
+    top:-10%;
+    left:0px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b5e9e8;
+}
+
+.section_title > img
+{
+    display: block;
+    margin-right: 25px;
+    width: auto;
+    height: 100%;
+}
+
+.portfolio_section > .portfolio_area
+{
+
+    width: 100%;
+    height: 95%;
+    overflow-y: scroll;
+    border-left: 1px solid #b5e9e8;
+    background-image: url(../imgs//bg_patton.png);
+    background-size: 2.5px;
+}
+
+.portfolio_area > .portfolio_list
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio_list > li
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 15px;
+    opacity: 0;
+    transition-duration: 0.1s;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48c6e1+0,000000+100&1+0,0+100 */
+    background: -moz-linear-gradient(left,  rgba(72,198,225,0.5) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(72,198,225,0.5) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.portfolio_list > li > .portfolio_img_box
+{
+    flex-direction: column;
+    margin-right: 15px;
+    width: 220px;
+    height: 100%;
+}
+
+.portfolio_img_box > a
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.portfolio_img_box > a > img
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 100%;
+    transition-duration: 0.2s;
+}
+
+.portfolio_img_box > a:hover > img
+{
+    height: 110%;
+}
+.portfolio_list > li > .portfolio_info
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    color:  #fff;
+}
+
+.portfolio_info > .project_name
+{
+    display: block;
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+.project_name > a
+{
+    color:  rgb(255, 255, 255);
+}
+
+.project_name > a:hover
+{
+    color: #b5e9e8;
+}
+
+.portfolio_info > .project_text
+{
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 25px;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
+}
+
+.portfolio_list > li > .portfolio_type
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 20px;
+    width: 15%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.portfolio_type > li
+{
+    margin-bottom: 10px;
+    width: 100px;
+    height:25px;
+    background-color: rgb(89, 136, 155);
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-top: 4px;
+    color:  rgb(255, 255, 255);
+}
+
+
+/*축소*/
+@media (min-width: 1950px)
+{
+
+
+}
+
+/*세로가 작을떄*/
+@media (min-height: 900px)
+{
+
+
+}
+
+
+/*테블릿*/
+@media (min-width: 767px) and (max-width: 1199px)
+{
+
+}
+
+/*모바일*/
+@media (max-width: 766px)
+{
+    .portfolio_section > .section_title
+    {
+        height: 35px;
+        padding: 0px;
+        justify-content: center;
+    }
+    .section_title > img
+    {
+        margin: 0 auto;
+        height: 50%;
+    }
+    .section_title > img:nth-child(1)
+    {
+        display: none;
+    }
+    .portfolio_section > .portfolio_area
+    {
+        overflow-y: visible;
+        border: none;
+    }
+    .portfolio_list > li
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .portfolio_list > li > .portfolio_img_box
+    {
+        margin: 0 auto;
+        height: 250px;
+    }
+    .portfolio_list > li > .portfolio_info
+    {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 75%;
+    }
+    .portfolio_info > .project_name
+    {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .portfolio_list > li > .portfolio_type
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    .portfolio_type > li
+    {
+        margin-right: 10px;
+    }
+
+}
+
+/*최소*/
+@media (max-width: 320px) 
+{
+
+}
+
