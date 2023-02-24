@@ -3,6 +3,7 @@ import { Routes , Route } from "react-router-dom";
 import $ from 'jquery';
 import OrangeSt from "./Orangebox.module.css";
 import Header from './parts/Header';
+import Footer from "./parts/Footer";
 import OrangeMain from './pages/OrangeMain';
 
 class Orangebox extends React.Component{
@@ -19,6 +20,7 @@ class Orangebox extends React.Component{
         <Routes>
           <Route path="/" element={<OrangeMain />}></Route>
         </Routes>
+        <Footer />
       </div>
       </>
     );

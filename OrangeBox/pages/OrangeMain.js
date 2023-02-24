@@ -26,6 +26,11 @@ import scheduledImg3 from "../img/scheduled_img3.jpg";
 import scheduledImg4 from "../img/scheduled_img4.jpg";
 import scheduledImg5 from "../img/scheduled_img5.jpg";
 import scheduledImg6 from "../img/scheduled_img6.jpg";
+import midiconImg1 from "../img/sale-icon.png";
+import midiconImg2 from "../img/point-icon.png";
+import midiconImg3 from "../img/membar-icon.png";
+import midiconImg4 from "../img/rocation.png";
+import bottomadImg from "../img/genshin_ad.png";
 class OrangeMain extends React.Component {
 
   componentDidMount() {
@@ -107,7 +112,7 @@ class OrangeMain extends React.Component {
     return (
       <>
         <div className={OrangeMainSt.orange_main}>
-          <div className={OrangeMainSt.main_movie}>
+          <section className={OrangeMainSt.main_movie}>
             <ul className={OrangeMainSt.main_movie_slide}>
               <li>
                 <img src={movieImg1} alt="무비 이미지1"></img>
@@ -128,8 +133,8 @@ class OrangeMain extends React.Component {
               <li />
               <li />
             </ul>
-          </div>
-          <div className={OrangeMainSt.popular_movie}>
+          </section>
+          <section className={OrangeMainSt.popular_movie}>
             <div className={OrangeMainSt.popular_list}>
               <button className={OrangeMainSt.pop_left_btn}></button>
               <div className={OrangeMainSt.popular_list_inner}>
@@ -334,10 +339,10 @@ class OrangeMain extends React.Component {
               </div>
               <button className={OrangeMainSt.pop_right_btn}></button>
             </div>
-          </div>
-          <div className={OrangeMainSt.scheduled_wrap}>
+          </section>
+          <section className={OrangeMainSt.scheduled_wrap}>
             <span className={OrangeMainSt.scheduled_title}>
-              상영예정작
+              극장 상영예정작
             </span>
             <ul className={OrangeMainSt.scheduled_list}>
               <li>
@@ -575,7 +580,68 @@ class OrangeMain extends React.Component {
                 </div>
               </li>
             </ul>
-          </div>
+            <button className={OrangeMainSt.scheduled_more_btn}>
+              + 상영예정작 더 보기
+            </button>
+          </section>
+          <div className={OrangeMainSt.net_movie_ad} />
+          <section className={OrangeMainSt.mid_menu_wrap}>
+            <ul className={OrangeMainSt.mid_menu_list}>
+              <li>
+                <img src={midiconImg1} alt="메뉴 아이콘"></img>
+                <span>할인안내</span>
+              </li>
+              <li>
+                <img src={midiconImg2} alt="메뉴 아이콘"></img>
+                <span>포인트적립</span>
+              </li>
+              <li>
+                <img src={midiconImg3} alt="메뉴 아이콘"></img>
+                <span>맴버십 가입</span>
+              </li>
+              <li>
+                <img src={midiconImg4} alt="메뉴 아이콘"></img>
+                <span>지점안내</span>
+              </li>
+              <li>
+                <img src={midiconImg4} alt="메뉴 아이콘"></img>
+                <span>지점안내</span>
+              </li>
+              <li>
+                <img src={midiconImg4} alt="메뉴 아이콘"></img>
+                <span>지점안내</span>
+              </li>
+            </ul>
+          </section>
+          <section className={OrangeMainSt.notice_warp}>
+            <span className={OrangeMainSt.notice_title}>
+              <p>공지사항</p>
+              <p>+더보기</p>
+            </span>
+            <ul className={OrangeMainSt.notice_list}>
+              <li>
+                <span>영화관람권 가격 변동 안내</span>
+                <span>2023-02-24</span>
+              </li>
+              <li>
+                <span>오렌지박스 영구VIP 서비스 등록 안내</span>
+                <span>2023-02-20</span>
+              </li>
+              <li>
+                <span>오렌지박스 개인정보처리방침 개정 안내</span>
+                <span>2023-02-12</span>
+              </li>
+              <li>
+                <span>시스템 장애 복구 안내</span>
+                <span>2023-02-10</span>
+              </li>
+            </ul>
+          </section>
+          <section className={OrangeMainSt.bottom_ad}>
+            <div className={OrangeMainSt.bottom_ad_in}>
+              <img src={bottomadImg} alt="밑 광고 이미지"></img>
+            </div>
+          </section>
         </div>
       </>
     );
