@@ -523,7 +523,7 @@ class OrangeMain extends React.Component {
                       감독 : 토마스 빈터베르
                     </li>
                     <li>
-                      출연 : 매즈 미켈슨,토마스 보 라센,마그누스 밀링
+                      출연 : 매즈 미켈슨,토마스 보 라센
                     </li>
                     <li>
                       개봉일 : 미정
@@ -562,7 +562,7 @@ class OrangeMain extends React.Component {
                       감독 : 앤드완 퓨콰
                     </li>
                     <li>
-                      출연 : 제라드 버틀러,아론 에크하트,모건 프리먼
+                      출연 : 제라드 버틀러,모건 프리먼
                     </li>
                     <li>
                       개봉일 : 미정
