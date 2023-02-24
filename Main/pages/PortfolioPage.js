@@ -90,6 +90,26 @@ class PortfolioPage extends React.Component{
             </li>
             <li>
               <div className={PortSt.portfolio_img_box}>
+                <Link to ="/OrangeBox" target="_blank">
+                  <img src={projectImg4} alt="프로젝트 이미지"></img>
+                </Link>
+              </div>
+              <div className={PortSt.portfolio_info}>
+                <span className={PortSt.project_name}>
+                  <Link to ="/OrangeBox" target="_blank">
+                    오렌지박스
+                  </Link>
+                </span>
+                <span className={PortSt.project_text}>
+                  자체적으로 디자인하여 마크업한 웹페이지 입니다. 영화를 주제로 개발한 사이트 이며 PC형으로 개발되었습니다.
+                </span>
+              </div>
+              <ul className={PortSt.portfolio_type}>
+                <li>PC</li>
+              </ul>
+            </li>
+            <li>
+              <div className={PortSt.portfolio_img_box}>
                 <Link to ="/InSquare" target="_blank">
                   <img src={projectImg3} alt="프로젝트 이미지"></img>
                 </Link>
@@ -102,7 +122,7 @@ class PortfolioPage extends React.Component{
                 </span>
                 <span className={PortSt.project_text}>
                   자체적으로 창작한 디자인으로 마크업한 웹페이지입니다. 게임판매 및 구매를 목적으로 하는 사이트이며
-                  반응형으로 제작되었습니다.
+                  반응형으로 개발되었습니다.
                 </span>
               </div>
               <ul className={PortSt.portfolio_type}>
@@ -111,26 +131,6 @@ class PortfolioPage extends React.Component{
                 <li>모바일</li>
                 <li>메인페이지</li>
                 <li>로그인</li>
-              </ul>
-            </li>
-            <li>
-              <div className={PortSt.portfolio_img_box}>
-                <Link to ="/OrangeBox" target="_blank">
-                  <img src={projectImg4} alt="프로젝트 이미지"></img>
-                </Link>
-              </div>
-              <div className={PortSt.portfolio_info}>
-                <span className={PortSt.project_name}>
-                  <Link to ="/OrangeBox" target="_blank">
-                    오렌지박스
-                  </Link>
-                </span>
-                <span className={PortSt.project_text}>
-                  임시
-                </span>
-              </div>
-              <ul className={PortSt.portfolio_type}>
-                <li>PC</li>
               </ul>
             </li>
           </ul>

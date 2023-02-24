@@ -5,6 +5,7 @@ import OrangeSt from "./Orangebox.module.css";
 import Header from './parts/Header';
 import Footer from "./parts/Footer";
 import OrangeMain from './pages/OrangeMain';
+import OrangeLogin from "./pages/OrangeLogin";
 
 class Orangebox extends React.Component{
   componentDidMount()
@@ -19,6 +20,7 @@ class Orangebox extends React.Component{
         <Header />
         <Routes>
           <Route path="/" element={<OrangeMain />}></Route>
+          <Route path="OrangeLogin/" element={<OrangeLogin />}></Route>
         </Routes>
         <Footer />
       </div>

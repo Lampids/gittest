@@ -30,6 +30,8 @@ import midiconImg1 from "../img/sale-icon.png";
 import midiconImg2 from "../img/point-icon.png";
 import midiconImg3 from "../img/membar-icon.png";
 import midiconImg4 from "../img/rocation.png";
+import midiconImg5 from "../img/cafe.png";
+import midiconImg6 from "../img/review.png";
 import bottomadImg from "../img/genshin_ad.png";
 class OrangeMain extends React.Component {
 
@@ -600,12 +602,12 @@ class OrangeMain extends React.Component {
                 <span>맴버십 가입</span>
               </li>
               <li>
-                <img src={midiconImg4} alt="메뉴 아이콘"></img>
-                <span>지점안내</span>
+                <img src={midiconImg5} alt="메뉴 아이콘"></img>
+                <span>영화 카페</span>
               </li>
               <li>
-                <img src={midiconImg4} alt="메뉴 아이콘"></img>
-                <span>지점안내</span>
+                <img src={midiconImg6} alt="메뉴 아이콘"></img>
+                <span>전문가 리뷰</span>
               </li>
               <li>
                 <img src={midiconImg4} alt="메뉴 아이콘"></img>
