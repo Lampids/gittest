@@ -75,7 +75,7 @@
     color:  #fff;
     box-sizing: border-box;
     padding: 5px 20px 5px 20px;
-    font-size: 31px;
+    font-size: 1.5vw;
     width: auto;
     height: auto;
     box-sizing: border-box;
@@ -91,7 +91,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', end
 {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 12vw;
 }
 
 .logo_box > span
@@ -117,8 +117,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', end
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    width: 80%;
-    height: auto;
+    width: auto;
+    height: 65%;
 }
 .main_intro_area > .thumbnail_imgs
 {
@@ -173,10 +173,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6e1', end
     .intro_box > span > p
     {
         font-size: 30px;
-    }
-    .logo_box > img
-    {
-        width: 800px;
     }
 }
 
